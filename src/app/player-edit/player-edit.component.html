@@ -1,0 +1,32 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+
+    <h3 class="mb-3 text-center">Update Player</h3>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerData.firstName" class="form-control" placeholder="First Name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerData.lastName" class="form-control" placeholder="Last Name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerData.club" class="form-control" placeholder="Club Name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerData.shirtNumber" class="form-control" placeholder="Shirt Number">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerData.position" class="form-control" placeholder="Position">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="updatePlayer()">Update Player</button>
+    </div>
+
+  </div>
+</div>
+

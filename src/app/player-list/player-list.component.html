@@ -1,0 +1,42 @@
+<div class="container custom-container-2">
+
+  <div class="no-data text-center" *ngIf="Players.length == 0">
+    <p>There is no player added yet!</p>
+    <button class="btn btn-outline-primary" routerLink="/player-create">Add Player</button>
+  </div>
+
+  <div *ngIf="Players.length !== 0">
+    <h3 class="mb-3 text-center">Players List</h3>
+
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">Player Id</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Club</th>
+          <th scope="col">Shirt Number</th>
+          <th scope="col">Position</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let player of Players">
+          <td>{{player.id}}</td>
+          <td>{{player.firstName}}</td>
+          <td>{{player.lastName}}</td>
+          <td>{{player.club}}</td>
+          <td>{{player.shirtNumber}}</td>
+          <td>{{player.position}}</td>
+          <td>
+            <span class="edit" routerLink="/player-edit/{{player.id}}">Edit</span>
+            <span class="delete" (click)="deletePlayer(player.id)">Delete</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>

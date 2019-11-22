@@ -1,0 +1,30 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Create Player</h3>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerDetails.firstName" class="form-control" placeholder="First Name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerDetails.lastName" class="form-control" placeholder="Last Name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerDetails.club" class="form-control" placeholder="Club Name">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerDetails.shirtNumber" class="form-control" placeholder="Shirt Number">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="playerDetails.position" class="form-control" placeholder="Position">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="addPlayer()">Create Player</button>
+    </div>
+
+  </div>
+</div>
