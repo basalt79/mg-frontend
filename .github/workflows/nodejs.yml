@@ -39,7 +39,5 @@ jobs:
         CI: true
         
     - name: Deploy to Github Package Registry
-      env:
-        GITHUB_TOKEN: ${{ secrets.action_local_test }}
       run: |
         npm publish
