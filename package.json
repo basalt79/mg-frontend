@@ -1,8 +1,8 @@
 {
-  "name": "mg-frontend",
+  "name": "@iMilad/mg-frontend",
   "version": "1.0.0",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/iMilad"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "ng": "ng",
