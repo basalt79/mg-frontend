@@ -43,6 +43,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.action_local_test }}
       run: |
         ls -la
-        pwd
-        echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > ~/.npmrc
-        npm --userconfig=~/.npmrc publish
+        echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
+        ls -la
+        npm publish
