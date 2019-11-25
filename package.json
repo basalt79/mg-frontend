@@ -1,9 +1,6 @@
 {
   "name": "mg-frontend",
   "version": "1.0.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxyconfig.json --open",
