@@ -39,5 +39,8 @@ jobs:
         CI: true
         
     - name: Deploy to Github Package Registry
+      env:
+        GITHUB_TOKEN: ${{ secrets.action_local_test }}
       run: |
-        npm publish
+        echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > ~/.npmrc
+        npm --userconfig=~/.npmrc publish
