@@ -1,5 +1,5 @@
 # MgFrontend
-[![build status](https://github.com/iMilad/mg-frontend/workflows/Node%20CI/badge.svg)](https://github.com/iMilad/mg-frontend/actions)
+[![build status](https://github.com/basalt79/mg-frontend/workflows/Node%20CI/badge.svg)](https://github.com/basalt79/mg-frontend/actions)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
