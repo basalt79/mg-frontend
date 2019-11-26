@@ -45,4 +45,5 @@ jobs:
         ls -la
         echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
         ls -la
+        cat .npmrc
         npm publish
