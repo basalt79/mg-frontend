@@ -40,6 +40,6 @@ jobs:
         
     - name: Deploy to Github Package Registry
       env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.NODE }}
       run: |
         npm publish
