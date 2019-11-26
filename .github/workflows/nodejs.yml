@@ -42,4 +42,6 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        npm publish
+        VERSION=$(node tasks/next-dev-version.js)
+        npm --no-git-tag-version version ${VERSION}
+        npm publish --tag dev
