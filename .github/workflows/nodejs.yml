@@ -50,7 +50,7 @@ jobs:
       env:
         DOCKER_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        docker build . --file Dockerfile --tag docker.pkg.github.com/basalt79/repo/mg-frontend:1.0.0
+        docker build . --file Dockerfile --tag docker.pkg.github.com/basalt79/mg-frontend/mgf:1.0.0
         docker login docker.pkg.github.com -u basalt79 -p ${DOCKER_AUTH_TOKEN}
         cat /home/runner/.docker/config.json
         docker push docker.pkg.github.com/basalt79/mg-frontend/mgf:1.0.0
