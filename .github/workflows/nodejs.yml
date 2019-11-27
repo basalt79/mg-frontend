@@ -45,3 +45,11 @@ jobs:
         VERSION=$(node tasks/next-dev-version.js)
         npm --no-git-tag-version version ${VERSION}
         npm publish --tag dev
+        
+    - name: Build the Docker image
+      env:
+        DOCKER_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        docker build . --file Dockerfile --tag docker.pkg.github.com/basalt79/repo/mg-frontend:1.0.0
+        docker push docker.pkg.github.com/basalt79/repo/mg-frontend:1.0.0
+      
